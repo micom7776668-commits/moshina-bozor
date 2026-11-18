@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoria — Dunyo avtomobillari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="#" aria-label="Autoria bosh sahifa">
+      <span class="brand-mark">A</span>
+      <span>AUTORIA</span>
+    </a>
+    <div class="nav-links">
+      <a class="active" href="#cars">Avtomobillar</a>
+      <a href="#brands">Brendlar</a>
+      <a href="#news">Yangiliklar</a>
+    </div>
+    <button class="menu-btn" aria-label="Menyu">☰</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+      <p class="eyebrow"><span></span> 2026 KOLLEKSIYASI</p>
+      <h1>MASHINALAR<br>DUNYOSI</h1>
+      <p class="hero-copy">Dunyoning eng mashhur va ishonchli avtomobil brendlari bir joyda.</p>
+      <a class="hero-btn" href="#cars">Katalogni ko'rish <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="catalog" id="cars">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark"><span></span> TANLANGAN MODELLAR</p>
+          <h2>Eng mashhur mashinalar</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Kategoriya filteri">
+          <button class="filter active" data-filter="all">Barchasi</button>
+          <button class="filter" data-filter="sport">Sport</button>
+          <button class="filter" data-filter="luxury">Lux</button>
+          <button class="filter" data-filter="suv">SUV</button>
+        </div>
+      </div>
+
+      <div class="catalog-tools">
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="carSearch" type="search" placeholder="Mashina yoki brend qidiring">
+          </div>
+          <span class="result-count" id="resultCount">0 mashina</span>
+        </div>
+
+      <div class="car-grid">
+        <article class="car-card featured" data-category="sport luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=85" alt="Ferrari 296 GTB">
+          <div class="card-info">
+            <div><p>Ferrari</p><h3>296 GTB</h3></div>
+            <strong>$342 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport">
+          <div class="card-top"><span>2025</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1000&q=85" alt="Porsche 911 GT3">
+          <div class="card-info">
+            <div><p>Porsche</p><h3>911 GT3</h3></div>
+            <strong>$242 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=85" alt="Mercedes-Benz S-Class">
+          <div class="card-info">
+            <div><p>Mercedes-Benz</p><h3>S-Class</h3></div>
+            <strong>$118 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="suv luxury">
+          <div class="card-top"><span>2025</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1000&q=85" alt="Range Rover">
+          <div class="card-info">
+            <div><p>Range Rover</p><h3>Autobiography</h3></div>
+            <strong>$205 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=85" alt="Audi R8">
+          <div class="card-info">
+            <div><p>Audi</p><h3>R8 V10</h3></div>
+            <strong>$208 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport">
+          <div class="card-top"><span>2025</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1000&q=85" alt="Lamborghini Huracan">
+          <div class="card-info">
+            <div><p>Lamborghini</p><h3>Huracán</h3></div>
+            <strong>$248 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="suv">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=85" alt="Mercedes G-Class">
+          <div class="card-info">
+            <div><p>Mercedes-Benz</p><h3>G-Class</h3></div>
+            <strong>$179 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85" alt="BMW M4">
+          <div class="card-info">
+            <div><p>BMW</p><h3>M4 Competition</h3></div>
+            <strong>$91 500</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1562911791-c7a97b729ec5?auto=format&fit=crop&w=1000&q=85" alt="Bentley Continental GT">
+          <div class="card-info">
+            <div><p>Bentley</p><h3>Continental GT</h3></div>
+            <strong>$302 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport">
+          <div class="card-top"><span>2025</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1599912027619-6f1a36d8e4af?auto=format&fit=crop&w=1000&q=85" alt="McLaren 720S">
+          <div class="card-info">
+            <div><p>McLaren</p><h3>720S</h3></div>
+            <strong>$315 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="suv luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=85" alt="Porsche Cayenne">
+          <div class="card-info">
+            <div><p>Porsche</p><h3>Cayenne Turbo</h3></div>
+            <strong>$156 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport luxury">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85" alt="Mercedes-AMG GT">
+          <div class="card-info">
+            <div><p>Mercedes-AMG</p><h3>GT 63 S</h3></div>
+            <strong>$195 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="sport">
+          <div class="card-top"><span>2025</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=85" alt="Chevrolet Corvette">
+          <div class="card-info">
+            <div><p>Chevrolet</p><h3>Corvette Z06</h3></div>
+            <strong>$112 000</strong>
+          </div>
+        </article>
+
+        <article class="car-card" data-category="suv">
+          <div class="card-top"><span>2026</span><span class="favorite">♡</span></div>
+          <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1000&q=85" alt="Toyota Land Cruiser">
+          <div class="card-info">
+            <div><p>Toyota</p><h3>Land Cruiser</h3></div>
+            <strong>$76 000</strong>
+          </div>
+        </article>
+      </div>
+
+      <div class="extra-cars" id="extraCars"></div>
+    </section>
+
+    <section class="company-section" id="brands">
+      <div class="company-copy">
+        <p class="eyebrow dark"><span></span> BIZ HAQIMIZDA</p>
+        <h2>Avtotransport dunyosining ishonchli yo‘lboshchisi</h2>
+        <p>Autoria 2018-yildan buyon dunyoning mashhur avtomobil brendlari bilan ishlaydi. Biz mijozga tanlov, hujjatlashtirish, yetkazib berish va sotuvdan keyingi xizmatni taqdim etamiz.</p>
+        <div class="company-stats"><div><strong>14K+</strong><span>Mijozlar</span></div><div><strong>35+</strong><span>Brendlar</span></div><div><strong>18</strong><span>Filiallar</span></div></div>
+      </div>
+      <div class="contact-card">
+        <h3>Biz bilan bog‘laning</h3>
+        <a href="tel:+998712345678">+998 (71) 234-56-78</a>
+        <a href="tel:+998901234567">+998 (90) 123-45-67</a>
+        <p>Toshkent, Amir Temur shoh ko‘chasi 45</p>
+        <p>demo@autoria.uz</p>
+      </div>
+    </section>
+
+    <section class="campaign" id="news">
+      <div><p>YOZGI AKSIYA • 2026</p><h2>Premium mashinalarda 10%gacha foyda</h2></div>
+      <a href="#cars">Mashinalarni ko‘rish</a>
+    </section>
+
+    <section class="team-section">
+      <p class="eyebrow dark"><span></span> MUTAXASSISLAR</p>
+      <h2>Bizning jamoa</h2>
+      <div class="team-grid">
+        <article><div class="avatar">AK</div><h3>Aziz Karimov</h3><p>Sotuv direktori</p><a href="tel:+998901111111">+998 90 111-11-11</a></article>
+        <article><div class="avatar">DM</div><h3>Dilnoza Mirzayeva</h3><p>Korporativ mijozlar</p><a href="tel:+998902222222">+998 90 222-22-22</a></article>
+        <article><div class="avatar">JR</div><h3>Jasur Rahimov</h3><p>Premium avtomobillar</p><a href="tel:+998903333333">+998 90 333-33-33</a></article>
+        <article><div class="avatar">SN</div><h3>Sardor Niyazov</h3><p>Texnik ekspert</p><a href="tel:+998904444444">+998 90 444-44-44</a></article>
+        <article><div class="avatar">MN</div><h3>Malika Nazarova</h3><p>Yetkazib berish menejeri</p><a href="tel:+998905555555">+998 90 555-55-55</a></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="buy-modal" id="buyModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <form class="buy-panel" id="buyForm">
+      <button type="button" class="modal-close" aria-label="Yopish">×</button>
+      <p class="eyebrow dark"><span></span> SOTIB OLISH</p>
+      <h3 id="modalTitle">Mashina sotib olish</h3>
+      <p class="car-description" id="modalDescription"></p>
+      <label>Ismingiz<input type="text" name="name" placeholder="To'liq ism" required></label>
+      <label>Davlat va telefon raqam
+        <div class="phone-row">
+          <select name="country" aria-label="Davlat kodi">
+            <option value="+998">🇺🇿 +998</option>
+            <option value="+82">🇰🇷 +82</option>
+            <option value="+7">🇷🇺 +7</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+49">🇩🇪 +49</option>
+            <option value="+971">🇦🇪 +971</option>
+            <option value="+90">🇹🇷 +90</option>
+            <option value="+86">🇨🇳 +86</option>
+            <option value="+81">🇯🇵 +81</option>
+          </select>
+          <input type="tel" name="phone" placeholder="90 123 45 67" required>
+        </div>
+      </label>
+      <fieldset class="payment-choice">
+        <legend>To'lov usuli</legend>
+        <label><input type="radio" name="payment" value="cash" checked> Naqd pul</label>
+        <label><input type="radio" name="payment" value="card"> Bank karta</label>
+      </fieldset>
+      <div class="card-fields hidden" id="cardFields">
+        <label>Karta raqami<input type="text" name="cardNumber" inputmode="numeric" maxlength="19" placeholder="8600 0000 0000 0000"></label>
+        <div class="card-small">
+          <label>Amal qilish muddati<input type="text" name="cardDate" maxlength="5" placeholder="MM/YY"></label>
+          <label>CVV<input type="password" name="cvv" inputmode="numeric" maxlength="3" placeholder="•••"></label>
+        </div>
+      </div>
+      <p class="payment-note">Demo to‘lov. Karta ma’lumotlari saqlanmaydi.</p>
+      <button class="buy-submit" type="submit">So'rov yuborish</button>
+    </form>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark">A</span><div><strong>AUTORIA</strong><p>Avtomobil dunyosining ishonchli manzili.</p></div></div>
+    <div class="footer-column"><h3>Menyular</h3><a href="#cars">Mashinalar</a><a href="#brands">Brendlar</a><a href="#news">Aksiyalar</a></div>
+    <div class="footer-column"><h3>Xizmatlar</h3><a href="#cars">Avtomobil tanlash</a><a href="#cars">Trade-in</a><a href="#brands">Texnik ekspertiza</a></div>
+    <div class="footer-column"><h3>Aloqa</h3><a href="tel:+998712345678">+998 71 234-56-78</a><a href="mailto:demo@autoria.uz">demo@autoria.uz</a><p>Toshkent, Amir Temur shoh ko‘chasi 45</p></div>
+  </footer>
+
+  <script>
+    const extraCars = [
+      ['Chevrolet','Malibu Turbo','2025','luxury','$29 500','https://images.unsplash.com/photo-1619767886558-efdc259cde1a'],
+      ['Chevrolet','Captiva Premier','2026','suv','$31 900','https://images.unsplash.com/photo-1616422285623-13ff0162193c'],
+      ['Chevrolet','Onix 2','2026','luxury','$14 800','https://images.unsplash.com/photo-1627624300083-c23ca1a42d95'],
+      ['Chevrolet','Tracker','2026','suv','$19 900','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Hyundai','Sonata','2025','luxury','$27 500','https://images.unsplash.com/photo-1580274455191-1c62238fa333'],
+      ['Hyundai','Tucson','2026','suv','$32 800','https://images.unsplash.com/photo-1661991940776-4f4b2b1b5f1d'],
+      ['Hyundai','Grandeur','2026','luxury','$39 900','https://images.unsplash.com/photo-1621993202323-f438eec0e9f4'],
+      ['Hyundai','Elantra N','2025','sport','$34 500','https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5'],
+      ['Kia','K5','2026','luxury','$30 800','https://images.unsplash.com/photo-1619767886558-efdc259cde1a'],
+      ['Kia','Sportage','2025','suv','$33 200','https://images.unsplash.com/photo-1617531653332-bd46c24f2068'],
+      ['Kia','Sorento','2026','suv luxury','$42 000','https://images.unsplash.com/photo-1609521263047-f8f205293f24'],
+      ['Kia','EV6 GT','2026','sport luxury','$62 000','https://images.unsplash.com/photo-1583121274602-3e2820c69888'],
+      ['Genesis','G80','2026','luxury','$54 700','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8'],
+      ['Genesis','GV80','2025','suv luxury','$68 000','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6'],
+      ['Toyota','Camry','2026','luxury','$29 000','https://images.unsplash.com/photo-1504215680853-026ed2a45def'],
+      ['Toyota','Corolla','2026','luxury','$22 400','https://images.unsplash.com/photo-1555215695-3004980ad54e'],
+      ['Toyota','RAV4','2025','suv','$35 900','https://images.unsplash.com/photo-1533473359331-0135ef1b58bf'],
+      ['Toyota','Prado','2026','suv luxury','$73 500','https://images.unsplash.com/photo-1525609004556-c46c7d6cf023'],
+      ['Toyota','Fortuner','2025','suv','$48 200','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Lexus','ES 350','2026','luxury','$49 500','https://images.unsplash.com/photo-1563720223185-11003d516935'],
+      ['Lexus','RX 350','2026','suv luxury','$64 900','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6'],
+      ['Lexus','LC 500','2025','sport luxury','$98 000','https://images.unsplash.com/photo-1626668908044-fd05c20da20a'],
+      ['Nissan','Patrol','2026','suv luxury','$79 500','https://images.unsplash.com/photo-1562911791-c7a97b729ec5'],
+      ['Nissan','X-Trail','2025','suv','$38 300','https://images.unsplash.com/photo-1609521263047-f8f205293f24'],
+      ['Honda','Accord','2026','luxury','$35 600','https://images.unsplash.com/photo-1580274455191-1c62238fa333'],
+      ['Honda','CR-V','2025','suv','$37 800','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6'],
+      ['Volkswagen','Passat','2026','luxury','$34 200','https://images.unsplash.com/photo-1555215695-3004980ad54e'],
+      ['Volkswagen','Tiguan','2026','suv','$39 100','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Jetour','Dashing','2025','suv','$25 900','https://images.unsplash.com/photo-1533473359331-0135ef1b58bf'],
+      ['Jetour','T2','2026','suv','$36 500','https://images.unsplash.com/photo-1525609004556-c46c7d6cf023'],
+      ['Chery','Tiggo 8 Pro','2026','luxury','$28 700','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8'],
+      ['Chery','Tiggo 7 Pro','2025','suv','$23 900','https://images.unsplash.com/photo-1609521263047-f8f205293f24'],
+      ['BYD','Han EV','2026','luxury','$41 800','https://images.unsplash.com/photo-1580274455191-1c62238fa333'],
+      ['BYD','Song Plus DM-i','2026','suv','$34 900','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Zeekr','001','2025','luxury','$49 300','https://images.unsplash.com/photo-1563720223185-11003d516935'],
+      ['Zeekr','7X','2026','suv luxury','$57 600','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6'],
+      ['Ford','Mustang GT','2025','sport','$62 000','https://images.unsplash.com/photo-1494976388531-d1058494cdd8'],
+      ['Ford','Explorer','2026','suv','$52 000','https://images.unsplash.com/photo-1533473359331-0135ef1b58bf'],
+      ['Jeep','Wrangler','2025','suv','$55 900','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Mazda','CX-90','2026','suv','$49 500','https://images.unsplash.com/photo-1609521263047-f8f205293f24'],
+      ['Suzuki','Jimny','2025','suv','$28 000','https://images.unsplash.com/photo-1504215680853-026ed2a45def'],
+      ['Subaru','Outback','2026','suv','$38 900','https://images.unsplash.com/photo-1533473359331-0135ef1b58bf'],
+      ['Volvo','XC90','2026','suv luxury','$73 000','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6'],
+      ['Mini','Cooper S','2025','sport','$39 800','https://images.unsplash.com/photo-1555215695-3004980ad54e'],
+      ['Peugeot','3008','2026','suv','$41 500','https://images.unsplash.com/photo-1519641471654-76ce0107ad1b'],
+      ['Renault','Megane E-Tech','2026','luxury','$36 900','https://images.unsplash.com/photo-1580274455191-1c62238fa333'],
+      ['Citroen','C5 Aircross','2025','suv','$34 300','https://images.unsplash.com/photo-1609521263047-f8f205293f24'],
+      ['Skoda','Kodiaq','2026','suv','$43 800','https://images.unsplash.com/photo-1525609004556-c46c7d6cf023'],
+      ['Aston Martin','Vantage','2026','sport luxury','$188 000','https://images.unsplash.com/photo-1542362567-b07e54358753'],
+      ['Rolls-Royce','Ghost','2026','luxury','$410 000','https://images.unsplash.com/photo-1563720223185-11003d516935'],
+      ['Tesla','Model S','2026','sport luxury','$89 990','https://images.unsplash.com/photo-1560958089-b8a1929cea89'],
+      ['Tesla','Model Y','2026','suv','$48 990','https://images.unsplash.com/photo-1619767886558-efdc259cde1a'],
+      ['Polestar','3','2026','suv luxury','$74 500','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8'],
+      ['Maserati','Ghibli','2025','luxury','$112 000','https://images.unsplash.com/photo-1555215695-3004980ad54e']
+    ];
+
+    const carGrid = document.querySelector('.car-grid');
+
+    extraCars.forEach(([brand, model, year, category, price, image]) => {
+      const article = document.createElement('article');
+      article.className = 'car-card';
+      article.dataset.category = category;
+      article.innerHTML = `
+        <div class="card-top"><span>${year}</span><button class="favorite" type="button" aria-label="Tanlangan">♡</button></div>
+        <img src="${image}?auto=format&fit=crop&w=1000&q=85" alt="${brand} ${model}">
+        <div class="card-info">
+          <div><p>${brand}</p><h3>${model}</h3></div>
+          <div class="card-actions"><strong>${price}</strong><button class="buy-btn" type="button">Sotib olish</button></div>
+        </div>`;
+      carGrid.appendChild(article);
+    });
+
+    document.querySelectorAll('.filter').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.filter.active').classList.remove('active');
+        button.classList.add('active');
+        const filter = button.dataset.filter;
+        const search = document.getElementById('carSearch').value.trim().toLowerCase();
+        document.querySelectorAll('.car-card').forEach(card => {
+          const matchesCategory = filter === 'all' || card.dataset.category.includes(filter);
+          const matchesSearch = !search || card.textContent.toLowerCase().includes(search);
+          card.classList.toggle('hidden', !matchesCategory);
+          card.classList.toggle('search-hidden', !matchesSearch);
+        });
+        updateResultCount();
+      });
+    });
+
+    document.querySelectorAll('.favorite').forEach(button => {
+      button.addEventListener('click', () => {
+        button.textContent = button.textContent === '♡' ? '♥' : '♡';
+        button.classList.toggle('saved');
+      });
+    });
+
+    document.querySelectorAll('.car-card').forEach(card => {
+      const info = card.querySelector('.card-info');
+      if (!info.querySelector('.buy-btn')) {
+        info.insertAdjacentHTML('beforeend', '<button class="buy-btn" type="button">Sotib olish</button>');
+      }
+    });
+
+    const modal = document.getElementById('buyModal');
+    const modalTitle = document.getElementById('modalTitle');
+
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.car-card');
+        const brand = card.querySelector('p').textContent;
+        const model = card.querySelector('h3').textContent;
+        modalTitle.textContent = `${brand} ${model}`;
+        document.getElementById('modalDescription').textContent = `${brand} ${model} — zamonaviy texnologiya, qulaylik va ishonchli xizmat bilan taklif etiladi.`;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    document.querySelectorAll('input[name="payment"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.getElementById('cardFields').classList.toggle('hidden', radio.value !== 'card' || !radio.checked);
+      });
+    });
+
+    const cardNumberInput = document.querySelector('[name="cardNumber"]');
+    cardNumberInput.addEventListener('input', () => {
+      cardNumberInput.value = cardNumberInput.value.replace(/\D/g, '').slice(0, 16).replace(/(.{4})/g, '$1 ').trim();
+    });
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.querySelector('.modal-close').addEventListener('click', closeModal);
+    document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
+    document.getElementById('buyForm').addEventListener('submit', event => {
+      event.preventDefault();
+      alert("So'rovingiz qabul qilindi! Tez orada bog'lanamiz.");
+      closeModal();
+      event.target.reset();
+      document.getElementById('cardFields').classList.add('hidden');
+    });
+
+    document.querySelector('.menu-btn').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+    const searchInput = document.getElementById('carSearch');
+    const resultCount = document.getElementById('resultCount');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      let count = 0;
+      document.querySelectorAll('.car-card').forEach(card => {
+        const brand = card.querySelector('p').textContent.toLowerCase();
+        const model = card.querySelector('h3').textContent.toLowerCase();
+        const isVisible = brand.includes(query) || model.includes(query);
+        card.classList.toggle('hidden', !isVisible);
+        if (isVisible) count++;
+      });
+      resultCount.textContent = `${count} mashina`;
+    });
+
+    document.getElementById('carSearch').addEventListener('input', event => {
+      const search = event.target.value.trim().toLowerCase();
+      let visible = 0;
+      document.querySelectorAll('.car-card').forEach(card => {
+        const matches = card.textContent.toLowerCase().includes(search);
+        card.classList.toggle('search-hidden', search && !matches);
+        if (!card.classList.contains('hidden') && (!search || matches)) visible++;
+      });
+      document.getElementById('resultCount').textContent = `${visible} mashina`;
+    });
+
+    document.querySelectorAll('.car-card img').forEach(image => {
+      image.addEventListener('error', () => {
+        image.src = 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1000&q=85';
+      });
+    });
+
+    function updateResultCount() {
+      const activeCards = [...document.querySelectorAll('.car-card')].filter(card =>
+        !card.classList.contains('hidden') && !card.classList.contains('search-hidden')
+      );
+      document.getElementById('resultCount').textContent = `${activeCards.length} mashina`;
+    }
+  </script>
+</body>
+</html>
